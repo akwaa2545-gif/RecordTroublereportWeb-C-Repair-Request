@@ -1,0 +1,16 @@
+﻿@{
+    ViewData["Title"] = "Repair Request";
+}
+
+<div class="text-center py-5">
+    <h1 class="display-4">Repair Request</h1>
+    <p class="lead">Submit and track maintenance requests in one place.</p>
+    @if (User.Identity?.IsAuthenticated == true)
+    {
+        <a class="btn btn-primary btn-lg" asp-controller="RepairRequests" asp-action="Create">Submit a request</a>
+    }
+    else
+    {
+        <a class="btn btn-primary btn-lg" asp-controller="Account" asp-action="Login">Sign in to submit a request</a>
+    }
+</div>

@@ -1,0 +1,4 @@
+<Solution>
+  <Project Path="RepairRequest.Web.Tests/RepairRequest.Web.Tests.csproj" />
+  <Project Path="RepairRequest.Web/RepairRequest.Web.csproj" />
+</Solution>
